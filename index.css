@@ -73,6 +73,17 @@ p.weather-temp {
     font-size: 1.7rem;
     margin-left: -10px;
 }
+/* div#dogs-facts {
+    align-content: center;
+} */
+h3#dogs-header {
+    /* align-content: center; */
+    text-align: center;
+}
+p#dogs {
+    text-align: center;
+    margin: 0;
+}
 
 p#author {
     font-size: 1rem;
