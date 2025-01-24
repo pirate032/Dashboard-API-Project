@@ -86,14 +86,17 @@ p#goal-header {
 
 p#goal-left,
 p#goal-current {
+    font-size: 1.2rem;
     margin: .5em 0;
 }
 
 h3#dogs-header {
+    font-size: 1.5rem;
     text-align: center;
 }
 
 p#dogs {
+    font-size: 1.2rem;
     text-align: center;
     margin: 0;
 }
