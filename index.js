@@ -8,7 +8,7 @@ try {
 )`
     document.getElementById("author").textContent = `By: Dodi Achmad`
 }
-//add in dog facts api
+//add dog facts api
 try {
     const resDogs = await fetch("https://dog-api.kinduff.com/api/facts?number=1")
     if (!resDogs.ok) {
@@ -20,17 +20,7 @@ try {
 } catch(err) {
     console.log(err)
 }
-//add random facts
-// try{
-//     const resFacts = await fetch("https://api.api-ninjas.com/v1/quotes")
-//     if(!resFacts){
-//         throw Error("Something went wrong")
-//     }
-//     const dataFacts = await resFacts.json()
-//     console.log(dataFacts)
-// } catch (err) {
-//     console.log(err)
-// }
+
 
 try {
     const res = await fetch("https://api.coingecko.com/api/v3/coins/bitcoin")
