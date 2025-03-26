@@ -10,13 +10,16 @@ try {
 }
 //add dog facts api
 try {
-    const resDogs = await fetch("https://dog-api.kinduff.com/api/facts?number=1")
+    //const resDogs = await fetch("https://dog-api.kinduff.com/api/facts?number=1")
+    const resDogs = await fetch("https://dogapi.dog/api/v2/facts?limit=1")
+    //console.log(resDogs)
     if (!resDogs.ok) {
         throw Error("Something went wrong")
     }
     const dataDogs = await resDogs.json()
-    console.log(dataDogs)
-    document.getElementById("dogs").innerText = dataDogs.facts[0]
+    //console.log(dataDogs.data[0].attributes.body)
+    //document.getElementById("dogs").innerText = dataDogs.facts[0]
+    document.getElementById("dogs").innerText = dataDogs.data[0].attributes.body
 } catch(err) {
     console.log(err)
 }
